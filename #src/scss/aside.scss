@@ -1,0 +1,96 @@
+// ASIDE BLOCK
+.aside-block {
+    position: relative;
+    padding: 35px 14px;
+
+    a {
+        display: block;
+        text-align: center;
+    }
+
+    i {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .aside-block__logo {
+        margin-top: 35px;
+    }
+
+    .aside-block__info {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        align-items: center;
+        width: 100%;
+        left: 0;
+
+        ul li a {
+            margin-top: 25px;
+        }
+
+        li {
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: red;
+            top: -7px;
+            right: 10px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+        }
+    }
+
+    .aside-block__contacts {
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        left: 0;
+        color: #5E6062;
+
+        li {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            margin-top: 10px;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #EBEBEB;
+            transition: 0.5s ease;
+        }
+
+        a:hover {
+            background: #00C1CA;
+            color: #fff;
+            transform: rotate(360deg);
+        }
+
+        li:first-child {
+            a {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .hat-mobile {
+        display: none;
+    }
+}
